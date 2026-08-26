@@ -9,7 +9,7 @@ A Timeless Classic, recreated to match the design standards of today, inspired h
 ### Dark Mode:
 <img width="657" height="743" alt="image" src="https://github.com/user-attachments/assets/85f3237b-438b-4d9c-bacf-c35e636348b7" />
 
-[![Click here to play](https://img.shields.io/badge/Run-Game-brightgreen?style=for-the-badge)]()
+[![Click here to play](https://img.shields.io/badge/Run-Game-brightgreen?style=for-the-badge)](https://tonystark965-404.github.io/Fluent-Minesweeper/)
 
 ## How to Play?
 - Click on the Run Game link and Play
