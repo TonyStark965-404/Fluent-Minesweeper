@@ -27,11 +27,12 @@ function cb(){
         }
         b.push(br);
     }}
-function pm(){
+function pm(sr,sc){
     let p=0;
     while(p<mn){
         let r=Math.floor(Math.random()*sz);
         let c=Math.floor(Math.random()*sz);
+        if(r===sr&&c===sc)continue;
         if(b[r][c].mine)continue;
         b[r][c].mine=true;
         p++;
@@ -84,6 +85,8 @@ function rc(r,c){
     if(d.revealed||d.flagged)return;
     if(!gs){
         gs=true;
+        pm(r,c);
+        cn();
         st();
     }
     d.revealed=true;
@@ -150,8 +153,6 @@ function ng(){
     tE.textContent="000";
     rB.textContent="🙂";
     cb();
-    pm();
-    cn();
     rb();
 }
 dB.addEventListener("click",e=>{
