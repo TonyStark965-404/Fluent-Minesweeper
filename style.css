@@ -44,6 +44,7 @@ background:var(--bg);
 color:var(--text)
 }
 .gwin{
+flex-shrink: 0;
 width:min(520px,94vw);
 border:1px solid var(--border);
 border-radius:24px;

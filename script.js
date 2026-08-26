@@ -14,7 +14,7 @@ let fl=0;
 let tm=0;
 let ti=null;
 const dif={
-    beginner:{sz:9,mn:10,wid:550},
+    beginner:{sz:9,mn:10,wid:520},
     intermediate:{sz:16,mn:40,wid:600},
     expert:{sz:22,mn:80,wid:650}
 };
