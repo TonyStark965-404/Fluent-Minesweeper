@@ -14,9 +14,9 @@ let fl=0;
 let tm=0;
 let ti=null;
 const dif={
-    beginner:{sz:9,mn:10},
-    intermediate:{sz:16,mn:40},
-    expert:{sz:22,mn:80}
+    beginner:{sz:9,mn:10,wid:550},
+    intermediate:{sz:16,mn:40,wid:600},
+    expert:{sz:22,mn:80,wid:650}
 };
 function cb(){
     b=[];
@@ -53,6 +53,8 @@ function cn(){
 function rb(){
     bE.innerHTML="";
     bE.style.gridTemplateColumns=`repeat(${sz},1fr)`;
+    const gw=document.querySelector(".gwin");
+    gw.style.width=`min(${wWid}px,92vw)`;
     for(let r=0;r<sz;r++){
         for(let c=0;c<sz;c++){
             const ce=document.createElement("div");
@@ -156,11 +158,13 @@ dB.addEventListener("click",e=>{
     e.stopPropagation();
     dM.classList.toggle("open");
 });
+let wWid=520;
 dM.querySelectorAll("button").forEach(x=>{
     x.addEventListener("click",()=>{
         const d=dif[x.dataset.difficulty];
         sz=d.sz;
         mn=d.mn;
+        wWid=d.wid;
         dM.classList.remove("open");
         ng();
     });
