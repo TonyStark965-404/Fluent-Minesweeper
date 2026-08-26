@@ -12,13 +12,18 @@ A Timeless Classic, recreated to match the design standards of today, inspired h
 [![Click here to play](https://img.shields.io/badge/Run-Game-brightgreen?style=for-the-badge)](https://tonystark965-404.github.io/Fluent-Minesweeper/)
 
 ## How to Play?
-- Click on the Run Game link and Play
+- Click on the Run Game link and play.
+- Left clicking reveals a cell.
+- Right clicking flags a cell.
+- While revealing a cell, if you get a mine, it's game over, Restart by clicking the face emoji at the top.
+- While revealing a cell, blank or numbered cells are safe.
+- Find all of the numbered/empty cells while avoiding the cells with mines, or flag all the cells with mines to win. 
 
 ## What features does it have?
-- A consistent design language, inspired by Windows 11 and MacOS Sequoia
-- Classic Minesweeper gameplay (including timer and mine flagging)
-- Light and Dark modes
-- Three difficulty systems
+- A consistent design language, inspired by Windows 11 and MacOS Sequoia.
+- Classic Minesweeper gameplay (including timer and mine flagging).
+- Light and Dark modes.
+- Three difficulty systems: Beginner (9x9 grid with 10 mines), Intermediate (16x16 grid with 40 mines) and Expert (22x22 grid with 80 mines).
   
 ## How can I run it locally and modify it?
    Easy, just do this:
