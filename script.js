@@ -26,8 +26,7 @@ function cb(){
             br.push({mine:false,revealed:false,flagged:false,adjacent:0});
         }
         b.push(br);
-    }
-}
+    }}
 function pm(){
     let p=0;
     while(p<mn){
@@ -36,8 +35,7 @@ function pm(){
         if(b[r][c].mine)continue;
         b[r][c].mine=true;
         p++;
-    }
-}
+    }}
 function cn(){
     for(let r=0;r<sz;r++){
         for(let c=0;c<sz;c++){
@@ -106,10 +104,7 @@ function re(r,c){
             if(!d.revealed&&!d.mine&&!d.flagged){
                 d.revealed=true;
                 if(d.adjacent===0)re(rr,cc);
-            }
-        }
-    }
-}
+            }}}}
 function tf(r,c){
     if(go)return;
     const d=b[r][c];
@@ -125,14 +120,12 @@ function rm(){
             if(d.mine)d.revealed=true;
         }
     }
-    rb();
-}
+    rb();}
 function cw(){
     for(const r of b){
         for(const d of r){
             if(!d.mine&&!d.revealed)return;
-        }
-    }
+        }}
     go=true;
     stp();
     rB.textContent="😎";
@@ -166,10 +159,8 @@ dB.addEventListener("click",e=>{
 dM.querySelectorAll("button").forEach(x=>{
     x.addEventListener("click",()=>{
         const d=dif[x.dataset.difficulty];
-
         sz=d.sz;
         mn=d.mn;
-
         dM.classList.remove("open");
         ng();
     });
@@ -197,7 +188,6 @@ tB.addEventListener("click",()=>{
         document.documentElement.dataset.theme="dk";
         tB.textContent="☀️";
         localStorage.setItem("theme","dk");
-    }
-});
+    }});
 rB.addEventListener("click",ng);
 ng();
