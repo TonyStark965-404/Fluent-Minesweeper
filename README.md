@@ -28,7 +28,7 @@ A Timeless Classic, recreated to match the design standards of today, inspired h
 ## How can I run it locally and modify it?
    Easy, just do this:
    ```bash
-   git clone https://github.com/TonyStark965-404/Fluent-New-Tab.git
+   git clone https://github.com/TonyStark965-404/Fluent-Minesweeper.git
    cd fluent-minesweeper
 ```
 Open index.html in your browser to play or
